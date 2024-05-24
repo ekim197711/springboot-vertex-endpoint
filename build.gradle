@@ -8,7 +8,7 @@ group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 
 java {
-    sourceCompatibility = '22'
+    sourceCompatibility = '17'
 }
 
 configurations {
@@ -24,6 +24,9 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+//    implementation 'com.google.api-client:google-api-client:1.30.9'
+    implementation 'com.google.auth:google-auth-library-credentials:0.20.0'
+    implementation 'com.google.auth:google-auth-library-oauth2-http:0.20.0'
     compileOnly 'org.projectlombok:lombok'
     runtimeOnly 'com.h2database:h2'
     annotationProcessor 'org.projectlombok:lombok'
